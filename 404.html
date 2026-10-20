@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Zero Out</title>
+    <!-- home-screen install: relative paths follow the page base; a sub-path host still needs its own build with expo.experiments.baseUrl (bundle URLs are absolute) -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="theme-color" content="#0E0F11" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Zero Out" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <style id="expo-reset">
+      html, body { height: 100%; background: #0E0F11; }
+      body { overflow: hidden; margin: 0; }
+      #root { display: flex; height: 100%; flex: 1; }
+      /* boot plate: painted before JS; App's <Splash/> draws the same plate until fonts are in */
+      #boot { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; z-index: -1; }
+      #boot .plate { width: 132px; height: 90px; box-sizing: border-box; border-radius: 14px; background: #F7C600; border: 2.5px solid #0B0B0B; display: flex; align-items: center; justify-content: center; }
+      #boot .zero { width: 34px; height: 58px; box-sizing: border-box; border-radius: 17px; border: 10px solid #0B0B0B; }
+    </style>
+  <meta name="theme-color" content="#0E0F11">
+<link rel="icon" href="/favicon.ico"/></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="boot"><div class="plate"><div class="zero"></div></div></div>
+    <div id="root"></div>
+  <script src="/_expo/static/js/web/index-44883d8e0916ebcc8499d59b392b2ed3.js" defer></script>
+</body>
+</html>
